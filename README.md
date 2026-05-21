@@ -17,7 +17,6 @@
 
 ''' sh
 # Install Java JDK 1.8+ as a pre-requisit for maven to run.
-
 sudo hostname maven
 cd /opt
 sudo yum install wget nano tree unzip git-all -y
@@ -26,14 +25,14 @@ java -version
 git --version
 
 
-## 2. Download, extract and install Maven
+## .step)2. Download, extract and install Maven
 ''' sh
 #step1) Download the Maven Software
 sudo wget https://dIcdn.apache.org/maven/maven-3/3.8.5/binaries/apache-maven-3.8.5-bin.zip
 sudo unzip apache-maven-3.8.5-bin.zip
 sudo mv apache-maven-3.8.5/ maven
 '''
-## .#steps) Set Environment Variable - For specific User eg ec2-user
+## .#step3) Set Environment Variable - For specific User eg ec2-user
 ''' sh
 vi ~/.bash_profile # and add the lines below
 export M2_HOME=/opt/maven
