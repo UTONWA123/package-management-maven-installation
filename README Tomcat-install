@@ -6,17 +6,17 @@
 cd /opt
 sudo yum install git wget -y
 
-sudo yum install java-1.8.0-opendjdk-devel -y
+sudo yum install java-21.0.11-openjdk-devel -y
 
 # Download tomcat software and extract it.
-
+sudo yum install wget unzip -y
 
 # download and extract tomcat software.
-sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.063/bin/apache-tomcat-9.0.63.tar.gz
-sudo tar -xvf apache-tomcat-9.0.63.tar.gz
-sudo rm apache-tomcat-9.0.63.tar.gz
+sudo wget https://dlcdn.apache.org/tomcat/tomcat-11/v11.0.22/bin/apache-tomcat-11.0.22.tar.gz
+sudo tar -xvf apache-tomcat-11.0.22.tar.gz
+sudo rm apache-tomcat-11.0.22.tar.gz
 
-sudo chomd 777 -R /opt/tomcat9
+sudo chomd 777 -R /opt/tomcat11
 sudo sh /opt/tomcat/bin/startup.sh
 # create a soft link to start and stop tomcat from anywhere
 sudo ln -s /opt/tomcat/bin/startup.sh /usr/bin/starttomcat
