@@ -16,7 +16,7 @@
 
 #!/bin/bash
 # TOMCAT.SH
-#Steps for Installing tomcat9 on rhe17&8
+#Steps for Installing tomcat11 on rhe17&8
 ``` sh
 # install Java JDK 1.8+ as a pre-requisit for tomcat to run.
 # https://github.com/UTONWA123/package-management/tree/main/Tomcat-installation
@@ -25,7 +25,6 @@ sudo yum install git wget -y
 sudo yum install java-21.0.11-openjdk-devel -y
 # Download tomcat software and extract it.
 sudo yum install wget unzip -y
-
 # download and extract tomcat software.11.0.22
 sudo wget https://dlcdn.apache.org/tomcat/tomcat-11/v11.0.22/bin/apache-tomcat-11.0.22.tar.gz
 sudo tar -xvf apache-tomcat-11.0.22.tar.gz
